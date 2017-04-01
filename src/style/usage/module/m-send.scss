@@ -1,0 +1,190 @@
+.m-send{
+    
+    width: 100%;
+    overflow-y:auto;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    .frist{
+       background: #fff;
+       width: 100%;
+      @include flexbox();
+      @include align-items(center);
+      @include flex-direction(column);
+      .inpt{
+          width: 100%;
+          height: .5rem;
+          text-align: center;
+          font-size: .18rem;
+          color:rgba(208,208,208,0.3) ;
+          line-height: .5rem;
+          border: none;
+          border-bottom: 0.01rem solid #eee;
+      }
+      .box{
+          border-bottom: 0.01rem solid #eee;
+          width: 100%;
+          height: 1.02rem;
+          text-align: center;
+          div{
+              height: .5rem;
+              @include flexbox();
+              text-align: center;
+              line-height: 0.5rem;
+             @include justify-content(center);
+             @include align-items(center);
+             font-size: .16rem;
+             color:rgba(208,208,208,1) ;
+              input{
+                  width: 1.02rem;
+                  height: .36rem;
+                  
+              }
+          }
+          .oclick{
+              font-size: .18rem;
+              color: #60614f;
+          }
+      }
+      .box1{
+          border-bottom: 0.01rem solid #eee;
+          width: 100%;
+          height: 2.02rem;
+          text-align: center;
+          div{
+              @include flexbox();
+              @include justify-content(center);
+              @include align-items(center);
+              width: 100%;
+              height: .5rem;
+              border: none;
+              font-size: .16rem;
+              input{
+                  height: .35rem;
+                  width: .57rem;
+                  text-align: center;
+                  margin-right: 0.02rem;
+              }
+          }
+          .inpu{
+              @include flexbox();
+              @include justify-content(center);
+              @include align-items(center);
+              font-size: .18rem;
+              color: rgba(208,208,208,1);
+              input{
+                  width: .57rem;
+                  margin-left: 0.02rem;
+                  margin-right: 0.02rem;
+                  
+              }
+          }
+          .inpu1{
+              font-size: .18rem;
+              input{
+                  width: .82rem;
+                  margin-left: 0.02rem;
+                  margin-right: 0.02rem;
+                  
+                  
+              }
+          }
+          select{
+              border: none;
+              width: 0.62rem;
+              height: .25rem;
+              font-size: .16rem;
+              text-align: center;
+          }
+      }
+      .box2{
+          height: 1.84rem;
+          width: 100%;
+          @include flexbox();
+          @include justify-content(center);
+          @include align-items(center);
+          .table{
+              
+             
+              height: 1.5rem;
+              text-align: center;
+              @include flexbox();
+              @include flex-direction(column);
+              border-left: 0.01rem solid rgba(248,165,130,1);
+              border-bottom: 0.01rem solid rgba(248,165,130,1);
+             div{
+                 height: .5rem;
+                 @include flexbox();
+                 @include justify-content(center);
+                 @include align-items(center);
+                 div{
+                     width:.7rem ;
+                     height: 100%;
+                     border-top: 0.01rem solid rgba(248,165,130,1);
+                     border-right: 0.01rem solid rgba(248,165,130,1);
+                     
+                 }
+                 .one1{width: 1.75rem;}
+             }
+          }
+      }
+      .box3{
+           height: 1.31rem;
+           width: 100%;
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(center);
+         div{
+             text-indent: .20rem;
+             height: .5rem;
+             font-size: .17rem;
+             input{
+                  height:.36rem;
+                  border: none;
+                  background: #f3f3f3;
+                  margin-left:.1rem;
+                  text-indent: .10rem;
+                  font-size: .14rem  
+             }
+             .Input{width: 1rem;}
+             .Input1{width: 1.95rem;}
+         }
+           
+      }
+      .keep{
+          width: 1.5rem;
+          height: 0.45rem;
+          background: #f69947;
+          text-align: center;
+          line-height: 0.4s5rem;
+          font-size: .20rem;
+      }
+    }
+    .secend{
+        margin-top: 2.5rem;
+        width: 3rem;
+        height: 1.27rem;
+        background:#f0f0f0;
+         @include flexbox();
+         @include flex-direction(column);
+         @include align-items(center);
+        div{
+           width: 2.6rem;
+           height: .47rem; 
+           text-align: center;
+           line-height: .47rem;
+           font-size: .16rem;
+           color: #565656;
+        }
+        input{
+           width: 2.6rem;
+           height: .39rem; 
+           text-align: center;
+           font-size: .17rem;
+           color: #fff;
+           background: #f56a03;
+           border-radius: 0.08rem;
+        }
+    }
+}

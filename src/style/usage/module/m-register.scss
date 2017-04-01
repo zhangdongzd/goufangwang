@@ -1,0 +1,42 @@
+.m-register{
+     @include flexbox();
+     @include flex-direction(column);
+     height: 100%;
+     header {
+       height: .44rem;
+       background: #f56a03;
+     }
+     .table{
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        
+        b{
+            height: .49rem;
+            font-size: .14rem;
+            color: #777;
+            line-height: .49rem;
+        }
+        input{
+            height: .40rem;
+            font-size: .16rem;
+             color: #000;
+             text-indent: .12rem;
+             border: none;
+             background: #fff;
+             width: 3.45rem;
+             border-radius: 0.05rem;
+        }
+        .pwd{
+            margin-top: .18rem;
+        }
+        .btn{
+            height: .45rem;
+            background: #f56a03;
+            color: rgba(250,250,250,0.8);
+            font-size: .16rem;
+            margin-top: .18rem;
+        }
+     }
+}

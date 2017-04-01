@@ -1,0 +1,54 @@
+.m-index {
+  @include flexbox();
+  @include flex-direction(column);
+  height: 100%;
+  header {
+    height: .44rem;
+    background: #f56a03;
+  }
+
+  section {
+    flex: 1;
+    overflow:auto;
+  }
+  footer {
+    height: .56rem;
+    background: #fff;
+    @include border(1px 0 0 0, #fff);
+    ul {
+      width: 100%;
+      height: 100%;
+      @include flexbox();
+      li {
+        @include flex();
+        &:first-child i {
+          margin-top: .05rem;
+        }
+        a {
+          height: 100%;
+          @include flexbox();
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(center);
+          i, b {
+            color: rgba(0, 0, 0, 0.8)
+          }
+          i {
+            font-size: .28rem;
+            line-height: .28rem;
+          }
+          b {
+            font-weight: normal;
+            font-size: .15rem;
+            // @include transform(scale(0.5));
+          }
+          &.active i,
+          &.active b {
+            font-weight: bold;
+            color: rgba(255, 102, 0, 1)
+          }
+        }
+      }
+    }
+  }
+}

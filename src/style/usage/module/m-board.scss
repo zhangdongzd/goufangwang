@@ -1,0 +1,139 @@
+@import "../component/carousel";
+
+@include yo-carousel(
+
+){
+
+height: 100%;
+ul.cont {
+
+    height: 100%;
+    li {
+      height: 100%;
+      img {
+        height: 100%;
+        margin-top:-0.44rem;
+      }
+    }
+
+}
+};
+
+.m-board {
+    touch-action: none;
+div.swiper {
+    height: 1.9rem;
+    background: #f9efd4;
+//     .yo-carousel {
+//       height: 100%;
+//       width: 100%;
+//       li {
+//         height: 100%;
+//         width: 100%;
+//         img {
+//           height: 100%;
+//           width: 100%;
+//         }
+//       }
+//     }
+}
+> ul {
+    height: 1.31rem;
+//  margin: .2rem 0;
+//  padding: .1rem;
+    background: #fff;
+
+
+
+    border-botom:1px solid #999;
+    padding:.15rem 0;
+    @include flexbox();
+    border-bottom:1px solid #EEEEEE;
+    li{
+
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        @include align-items(center);
+        @include flex(1);
+
+        
+        @include flex(1);
+        
+         a{
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            @include align-items(center);
+            color:#222;
+        }
+
+    }
+}
+
+    .part01{
+        background:#fff;
+        @include flexbox();
+        width:100%;
+        height: .7rem;
+        @include align-items(center);
+        border-bottom:1px solid #EEEEEE;
+        .part01-left{
+            width:100%;
+             height:100%;
+            @include flex(1);
+            width: 1.7rem;
+            height: .4rem;
+            @include flexbox();
+            padding-left:.1rem;
+            border-right:1px solid #eee;
+            img{
+                width:.4rem;
+                height:.4rem;
+            }
+            
+            .jiameng-span{
+              @include flexbox();
+              @include flex-direction(column);
+              .jiameng-top{
+                  font-size:0.18rem;
+                  line-height:0.22rem;
+              } 
+              .jiameng-bottom{
+                  font-size:0.14rem;
+                  line-height:0.18rem;
+              } 
+            }
+        }
+        .part01-right{
+             width:100%;
+             height:100%;
+            @include flex(1);
+             width: 1.7rem;
+            height: .4rem;
+            padding-left:.1rem;
+            @include flexbox();
+            img{
+                width:.4rem;
+                height:.4rem;
+            }
+            .goufang-span{
+              @include flexbox();
+              @include flex-direction(column);   
+              .goufang-top{
+                  font-size:0.18rem;
+                  line-height:0.22rem;
+              } 
+              .goufang-bottom{
+                  font-size:0.14rem;
+                  line-height:0.18rem;
+              } 
+            }
+        }
+    }
+
+
+}
+
+
+

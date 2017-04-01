@@ -1,0 +1,83 @@
+.m-buy{
+    width: 100%;
+    overflow-y:auto;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    .frist{
+        width: 100%;
+        .top{
+            height: .75rem;
+            width: 100%;
+            @include flexbox();
+             @include justify-content(center);
+            ul{
+               
+                @include flexbox();
+//              @include flex-direction(column);
+                @include align-items(center);
+//              @include justify-content(center);
+                height: .8rem;
+                width: 3.25rem;
+                
+                li{
+                   
+                    width: .6rem;
+                    height: .8rem;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items(center);
+                    @include justify-content(center);
+                    i{
+                        width: .5rem;
+                        height: .5rem;
+                        font-size:.32rem ;
+                    }
+                    b{
+                        
+                        width: .5rem;
+                        height: .3rem;
+                        font-size: .12rem;
+                    }
+                    &.active b {
+                        font-weight: bold;
+                        color: rgba(255, 102, 0, 1)
+                    }
+                }
+            }
+        }
+        .bottom{
+            height: .41rem;
+            text-align: center;
+            line-height: .41rem;
+            font-size: .12rem;
+        }
+   }
+    .secend{
+        margin-top: 2.5rem;
+        width: 3rem;
+        height: 1.27rem;
+        background:#f0f0f0;
+         @include flexbox();
+         @include flex-direction(column);
+         @include align-items(center);
+        div{
+           width: 2.6rem;
+           height: .47rem; 
+           text-align: center;
+           line-height: .47rem;
+           font-size: .16rem;
+           color: #565656;
+        }
+        input{
+           width: 2.6rem;
+           height: .39rem; 
+           text-align: center;
+           font-size: .17rem;
+           color: #fff;
+           background: #f56a03;
+           border-radius: 0.08rem;
+        }
+    }
+}
