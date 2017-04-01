@@ -8,10 +8,8 @@ module.exports = {
 
   output: {
     path: __dirname + '/build',
-
 //     filename: 'app_[hash].js'
 	     filename: 'app.js'
-
   },
 
   devServer: {
@@ -61,24 +59,22 @@ module.exports = {
   },
 
   plugins: [
-
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false
-    //   },
-    //   output: {
-    //     comments: false
-    //   }
-    // }),
-
+//     new webpack.optimize.UglifyJsPlugin({
+//       compress: {
+//         warnings: false
+//       },
+//       output: {
+//         comments: false
+//       }
+//     }),
     new HtmlWebpackPlugin({
       template: './src/index.ejs',
       filename: 'index.html',
       title: '购房网'
     }),
     new ExtractTextPlugin({
-      // filename: 'app_[hash].css',
-      filename: 'app.css',
+      filename: 'app_[hash].css',
+//    filename: 'app.css',
       disable: false,
       allChunks: true
     }),

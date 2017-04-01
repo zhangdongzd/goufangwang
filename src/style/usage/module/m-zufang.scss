@@ -1,3 +1,78 @@
 .m-zufang{
+    .header-list{
+        height:.42rem;
+        @include flexbox();
+        background:#fff;
+        border-bottom:1px solid rgba(0,0,0,0.1);
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        li{
+            width:100%;
+            height:.2rem;
+            @inlude flex(1);
+            @include flexbox();
+            @include justify-content(center);
+            @include align-items(center);
+            border-right:1px solid rgba(0,0,0,0.1);
+            select{
+            width:.56rem;
+            height:.2rem;
+            text-align:center;
+            border:none;
+            font-weight:bold;
+            }
+        }
+        
+    }
     
+    .part02{
+        height:1.17rem;
+        background:#fff;
+        padding:.15rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        border-bottom:2px solid #eee;
+        img{
+            width:1.12rem;
+            height:.84rem;
+        }
+        .part02-right{
+            width:2.21rem;
+            height:.84rem;
+            h3{
+                font-size:.14rem;
+                line-height:.2rem;
+                height:.2ren;
+                white-space:nowrap;
+                overflow:hidden;
+                  text-overflow: ellipsis;
+            }
+            
+             .part02-right01{
+                 font-size:.12rem;
+                line-height:.2rem;
+                height:.2ren;
+                white-space:nowrap;
+                overflow:hidden;
+                  text-overflow: ellipsis;
+            }
+            
+             .part02-right02{
+                  font-size:.12rem;
+//                transform:scale(0.6);
+//                transform-origin:left;
+                  white-space:nowrap;
+                  width:2.21rem;
+                  height:.2rem;
+                  overflow:hidden;
+                  text-overflow: ellipsis;
+                  line-height:.2rem;
+            }
+            
+             
+            
+        }
+    }
 }

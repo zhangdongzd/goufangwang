@@ -30,25 +30,12 @@
   url(/iconfont/iconfont-4.ttf) format("truetype");
 }
 
-
-@font-face {
-  font-family: yofont;
-
-  src: url(/iconfont/iconfont-5.woff) format("woff"),
-  url(/iconfont/iconfont-5.ttf) format("truetype");
-
-
-}
 @font-face {
   font-family: yofont;
   src: url(/iconfont/iconfont-6.woff) format("woff"),
   url(/iconfont/iconfont-6.ttf) format("truetype");
 }
-@font-face {
-  font-family: yofont;
-  src: url(/iconfont/iconfont-7.woff) format("woff"),
-  url(/iconfont/iconfont-7.ttf) format("truetype");
-}
+
 @include yo-header(
   $name: a,
   $bgcolor: #f56a03,
@@ -59,18 +46,5 @@
   .regret {
     right: 0;
     left: auto;
-  }
-  
-}
-@include yo-header(
-  $name: b,
-  $bgcolor: #f56a03,
-  $border-width: 0,
-  $item-ico-color: #fff,
-  $font-size: .16rem
-){
-  .regret {
-    right: auto;
-    left: 0;
   }
 }

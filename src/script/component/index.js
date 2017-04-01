@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-router'
 import { connect } from 'react-redux'
-
+import Scroller from '../../component_dev/scroller/src/'
 import { mapStateToProps, mapDispatchToProps } from '../redux/store'
 
 class Index extends React.Component {
@@ -15,12 +15,17 @@ class Index extends React.Component {
       <div className="m-index">
         <header>
           <div className="yo-header yo-header-a">
-            <h2 className="title">{this.props.value}</h2>
+
+          <h2 className="title">{this.props.value}</h2>
+          
+
           </div>
         </header>
-        <section>
-          {this.props.children}
-        </section>
+         
+		        <section>
+		          {this.props.children}
+		        </section>
+        	
         <footer>
           <ul>
             <li className="active">
@@ -56,11 +61,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
-   let title = this.props.routes[1].title
-    this.props.onChange({
-      type: 'SETTITLE',
-      title: title
-    })
+    // console.log(this.refs.board.props.title);
   }
 
   componentDidUpdate() {
